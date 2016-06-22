@@ -1,0 +1,47 @@
+{
+  "name": "react-testing-example",
+  "version": "0.0.0",
+  "description": "A sample project to investigate testing options with ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swizec/react-testing-example"
+  },
+  "author": "Swizec Teller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Swizec/react-testing-example/issues"
+  },
+  "homepage": "https://github.com/Swizec/react-testing-example",
+  "devDependencies": {
+    "babel-core": "^5.2.17",
+    "babel-loader": "^5.4.0",
+    "d3": "^3.5.17",
+    "expect": "^1.20.1",
+    "jsx-loader": "^0.13.2",
+    "karma": "^0.13.0",
+    "karma-chrome-launcher": "^0.1.10",
+    "karma-cli": "0.0.4",
+    "karma-mocha": "^0.1.10",
+    "karma-sourcemap-loader": "^0.3.4",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.2.4",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.7",
+    "react-tools": "^0.13.3",
+    "require": "^2.4.20",
+    "webpack": "^1.9.4",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/d3"
+    ]
+  }
+}
