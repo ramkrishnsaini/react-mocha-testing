@@ -26,4 +26,4 @@ This is the example code for a companion article on testing React modules. Follo
   
   Reference article:
   
-  ![Reference](https://www.toptal.com/react/how-react-components-make-ui-testing-easy)
+  https://www.toptal.com/react/how-react-components-make-ui-testing-easy
