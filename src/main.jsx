@@ -5,6 +5,7 @@ var ScatterPlot = require('./ScatterPlot');
 var RandomPicker = require('./RandomPicker');
 var Header = require('./Header');
 var Footer = require('./Footer');
+var Registration = require('./Registration');
 
 var App = React.createClass({
     getInitialState: function () {
@@ -16,7 +17,7 @@ var App = React.createClass({
     updateRandom: function (random) {
         this.setState({random: random});
     },
-
+    
     render: function () {
         var data = d3.range(1000).map(function () {
             return {x: this.state.random(), y: this.state.random()};
@@ -27,7 +28,12 @@ var App = React.createClass({
                 <Header/>
                 <ScatterPlot width="500" height="300" data={data} />
                 <RandomPicker newRandomFunction={this.updateRandom} />
+            
+            
+            <Registration/>
+            
                 <Footer/>
+            
             </div>
         );
     }

@@ -31,7 +31,7 @@ var RandomPicker = React.createClass({
         d[name] = Number(event.target.value);
 
         this.setState(d);
-    },
+    }, 
 
     componentDidUpdate: function () {
         if (this.props.newRandomFunction) {
@@ -73,6 +73,7 @@ var RandomPicker = React.createClass({
                                    value={this.state[input.key]}
                                    name={input.key}
                                    onChange={this.inputChange} />
+                            
                         </div>
                     );
                  }.bind(this))}
