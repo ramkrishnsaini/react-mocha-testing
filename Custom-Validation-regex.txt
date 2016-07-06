@@ -1,0 +1,32 @@
+just go through this page.. Here is a simple example.. which I followed.
+
+https://jurassix.gitbooks.io/docs-react-validation-mixin/content/overview/custom.html
+
+see below section on this page:
+
+1) Options provided to specific schema
+
+By providing the options to an individual schema, you can override messages when validating the single field.
+
+=======================================================
+validatorTypes:  {
+  firstName: Joi.string().required().label('First Name'),
+  lastName: Joi.string().allow(null).label('Last Name'),
+  email: Joi.string().email().min(3).max(10).required().label('Email').options({
+    language: {
+      any: {
+        required: '{{key}} custom required message.',
+      },
+      string: {
+        base: '{{key}} custom string message.',
+        email: '{{key}} custom email message.',
+      }
+    }
+  }),
+}
+=======================================================
+
+=======================================================
+
+
+
