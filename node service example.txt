@@ -1,0 +1,9 @@
+https://isolasoftware.it/2012/05/28/call-rest-api-with-node-js/
+
+here is both the example for GET and POST 
+
+you just need to use GET...
+
+call this service into that Registration method... into node service..
+
+
