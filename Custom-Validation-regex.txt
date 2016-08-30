@@ -30,3 +30,13 @@ validatorTypes:  {
 
 
 
+Below is the regex used in type=”email”
+
+/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+-----------------
+
+One thing is pending in this .mil at the end.. I tried this but still it taking more than one .mil...
+I m working on this.. Till use above regex that is valid for email.
+
+---------------
